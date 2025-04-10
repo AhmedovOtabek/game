@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.textbox {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);    border-radius: 5px;
+    overflow-y: auto;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 50px; /* Input uchun joy */
+}
+
+.writer {
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+
+.writer::placeholder {
+    font-style: italic;
+    padding: 10px;
+}
+
+.send-m {
+    border: none;
+    background-color: white;
+    height: 32px;
+    margin-left: -1px;
+}
+
+.fa-paper-plane {
+    font-size: 20px;
+    color: rgb(1, 1, 53);
+    margin-left: -4px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+   
+    padding: 10px;
+}
+
+
+.right {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    align-self: flex-end;
+    max-width: 80%;
+    margin: 5px;
+}
+p {
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left {
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    align-self: flex-start;
+    max-width: 80%;
+    margin: 5px;
+}
